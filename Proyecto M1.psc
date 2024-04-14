@@ -1,64 +1,66 @@
-Algoritmo CalcularCostoProducto
-    // Declaraci�n de variables
-    Definir precioOriginal, descuentoAplicado, impuestos, cantidad, pesoPaquete, costoEnvio, costoProducto, descuentoCantidad Como Real
+Algoritmo Proyecto1M1
+    // Declaración de variables
+    Definir precioOriginal, descuento, iva, cantidad, peso, costoEnvio, costoFinal, precioDescuento, precioImpuestos, precioCantidad, costoEnviototal Como real
+    Dimension destino[2,2] // Implementación de control de flujo: condiciones, bucles y uso de arreglos unidimensionales y/o bidimensionales
     
-    // Leer el precio original del producto
-    Escribir "Ingrese el precio original del producto:"
+    // Definición de los destinos con su costo de envío
+    destino[1,1] <- "Nueva York"
+    destino[1,2] <- "10"
+    destino[2,1] <- "Otros Estados"
+    destino[2,2] <- "5"
+    
+    // Ingreso de datos
+    Escribir "Ingresar precio original:"
     Leer precioOriginal
     
-    // Leer si hay un descuento aplicado
-    Escribir "�Hay alg�n descuento aplicado? (Si/No):"
-    Leer respuestaDescuento
-    Si respuestaDescuento = "Si" Entonces
-        Escribir "Ingrese el porcentaje de descuento aplicado:"
-        Leer descuentoAplicado
-    Sino
-        descuentoAplicado = 0
-    FinSi
+    Escribir "Ingresar porcentaje de descuento:"
+    Leer descuento
     
-    // Leer los impuestos aplicables
-    Escribir "Ingrese los impuestos aplicables (%):"
-    Leer impuestos
+    Escribir "Ingresar porcentaje de impuesto:"
+    Leer iva
     
-    // Leer la cantidad de productos
-    Escribir "Ingrese la cantidad de productos comprados:"
+    Escribir "Ingresar la cantidad de productos:"
     Leer cantidad
     
-    // Leer el peso del paquete y el destino para calcular el costo de env�o
-    Escribir "Ingrese el peso del paquete (en kg):"
-    Leer pesoPaquete
-    Escribir "Ingrese el destino del paquete:"
-    Leer destino
+    Escribir "Ingresar peso del paquete en KG:"
+    Leer peso
     
-    // Calcular el descuento por cantidad
+    Escribir "Ingresar el destino del envío:"
+    Para i = 1 Hasta 2 con paso 1 Hacer
+        Escribir i, ".", destino[i,1]
+    FinPara
+    Leer destino[1,2] // Leemos el costo de envío para el destino seleccionado
+    
+    // Implementación de operaciones aritméticas y operadores de comparación
+    
+    Si descuento > 0 Entonces
+        precioDescuento <- precioOriginal - (precioOriginal * (descuento / 100))
+    Sino
+        precioDescuento <- precioOriginal
+    FinSi
+    
+    precioImpuestos <- precioDescuento * (1 + (iva / 100))
+    
     Si cantidad > 1 Entonces
-        descuentoCantidad = 0.05 // Supongamos un descuento del 5% por cada producto adicional
-    Sino
-        descuentoCantidad = 0
+        precioCantidad <- (precioImpuestos - (precioImpuestos * (5 / 100))) * cantidad
+    Sino 
+        precioCantidad <- precioImpuestos
     FinSi
     
-    // Calcular el costo final del producto
-    costoProducto = (precioOriginal * (1 - (descuentoAplicado / 100))) * (1 + (impuestos / 100)) * (1 - descuentoCantidad) + costoEnvio
+	cadenaCostoEnvio <- destino[1,2]
+	costoEnvio <- ConvertirANumero(cadenaCostoEnvio)
+	
+	costoEnviototal = (costoEnvio) + (peso * 2 )
+	
+	
+    costoFinal <- precioCantidad + costoEnviototal
     
-    // Mostrar el costo final del producto con desglose
-    Escribir "Costo final del producto:"
-    Escribir "Precio con descuento aplicado:", precioOriginal * (1 - (descuentoAplicado / 100))
-    Escribir "Impuestos:", precioOriginal * (impuestos / 100)
-    Escribir "Descuento por cantidad:", precioOriginal * descuentoCantidad
-    Escribir "Costo de env�o:", costoEnvio
-    Escribir "Costo total:", costoProducto
+    // Ejecución del Proceso 
+    Escribir "Detalle de la compra:"
+    Escribir "Precio sin impuesto y con descuento: ", precioDescuento
+    Escribir "Precio con impuestos incluidos: ", precioImpuestos
+    Escribir "Precio con descuento adicional por cantidad: ", precioCantidad
+    Escribir "Costo por envío: ", costoEnviototal
+    Escribir "Costo total de producto + envío: ", costoFinal
+    
 FinAlgoritmo
-
-Funci�n CalcularCostoEnvio(peso, destino)
-// L�gica para calcular el costo de env�o basado en el peso y el destino
-// Puedes implementar esta funci�n seg�n los criterios espec�ficos de tu sistema
-Definir costo Como Real
-Si destino = "Nacional" Entonces
-	costo = peso * 5 // Supongamos $5 por kg para env�os nacionales
-Sino Si destino = "Internacional" Entonces
-        costo = peso * 10 // Supongamos $10 por kg para env�os internacionales
-    Sino
-        costo = 0 // Si el destino no est� definido, el costo de env�o es cero
-    FinSi
-FinSi
-FinFunci�n
