@@ -1,4 +1,4 @@
-<h1> <img src = "https://bootcampvirtual.udd.cl/blog/wp-content/uploads/2022/07/bootcamp-publicidad.png" width = "100px"> "PROYECTO 1: Algoritmo de Sistema de Costos"</h1>
+<h1> <img src = "https://github.com/NicoBrainFitness/Proyecto1M1/blob/main/banner.png"> "PROYECTO 1: Algoritmo de Sistema de Costos"</h1>
 
 <h2>Planteamiento</h2>
 
