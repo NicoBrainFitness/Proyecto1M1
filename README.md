@@ -41,4 +41,44 @@ Construir un algoritmo en pseudocódigo que simule un sistema para calcular el c
     - Escribir "Ingresar peso del paquete en KG:"
     - Leer peso     
   
-- 
+- Cuarto Paso: Al momento de buscar ingresar el dato del lugar de envío, realizar un control de flujo por medio de condición y bucle:
+    - Escribir "Ingresar el destino del envío:"
+    - Para i = 1 Hasta 2 con paso 1 Hacer
+        - Escribir i, ".", destino[i,1]
+    - FinPara
+    - Leer destino[1,2]   
+
+- Quinto Paso: Agregar  operaciones aritméticas y operadores de comparación para realizar los cálculos:
+    -  Si descuento > 0 Entonces
+        - precioDescuento <- precioOriginal - (precioOriginal * (descuento / 100))
+    - Sino
+        - precioDescuento <- precioOriginal
+    - FinSi
+    
+    - precioImpuestos <- precioDescuento * (1 + (iva / 100))
+    
+    - Si cantidad > 1 Entonces
+        - precioCantidad <- (precioImpuestos - (precioImpuestos * (5 / 100))) * cantidad
+    - Sino 
+        - precioCantidad <- precioImpuestos
+    - FinSi
+    
+
+- Sexto Paso: Para ejecutar correctamente la selección del lugar de destino, se debe de convertir el costo del envío del arreglo bidimensional a número:
+    - cadenaCostoEnvio <- destino[1,2]
+	    - costoEnvio <- ConvertirANumero(cadenaCostoEnvio)
+	
+	- costoEnviototal = (costoEnvio) + (peso * 2 )
+		
+    - costoFinal <- precioCantidad + costoEnviototal
+
+- Septimo Paso: Definir los prompts que alimentaran las variables para ejecutar el proceso:
+    - Escribir "Detalle de la compra:"
+    - Escribir "Precio sin impuesto y con descuento: ", precioDescuento
+    - Escribir "Precio con impuestos incluidos: ", precioImpuestos
+    - Escribir "Precio con descuento adicional por cantidad: ", precioCantidad
+    - Escribir "Costo por envío: ", costoEnviototal
+    - Escribir "Costo total de producto + envío: ", costoFinal
+ 
+- Octavo Paso: Probar el pseudo codigo reailzado en Pseint, con el siguiente resultado:
+   
