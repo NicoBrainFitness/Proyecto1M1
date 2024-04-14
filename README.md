@@ -17,9 +17,14 @@ Construir un algoritmo en pseudocódigo que simule un sistema para calcular el c
 <h4>Solución explicada paso a paso</h4>
 
 - Primer paso: Declarar las variabes que se usaran en el programa
-["Algoritmo Proyecto1M1
-    // Declaración de variables
-    Definir precioOriginal, descuento, iva, cantidad, peso, costoEnvio, costoFinal, precioDescuento, precioImpuestos, precioCantidad, costoEnviototal Como real"](url)
+Definir precioOriginal, descuento, iva, cantidad, peso, costoEnvio, costoFinal, precioDescuento, precioImpuestos, precioCantidad, costoEnviototal Como real
 
+- Segundo paso: Crear un arreglo bidimensional de una matiz 2,2 para la selección del Estado y el Costo:
+Dimension destino[2,2]
+    - destino[1,1] <- "Nueva York"
+    - destino[1,2] <- "10"
+    - destino[2,1] <- "Otros Estados"
+    - destino[2,2] <- "5"
+- 
   
 - 
