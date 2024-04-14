@@ -14,7 +14,7 @@ Construir un algoritmo en pseudocódigo que simule un sistema para calcular el c
 - 6. Calcular el costo final del producto sumando el precio con descuento, impuestos, descuento por cantidad y costo de envío.
 - 7. Mostrar el costo final del producto, desglosando los diferentes componentes (descuentos, impuestos, descuento por cantidad y costo de envío).
 
-<h4>Solución explicada paso a paso</h4>
+<h4>###Solución explicada paso a paso</h4>
 
 - Primer paso: Declarar las variabes que se usaran en el programa
     - Definir precioOriginal, descuento, iva, cantidad, peso, costoEnvio, costoFinal, precioDescuento, precioImpuestos, precioCantidad, costoEnviototal Como real
