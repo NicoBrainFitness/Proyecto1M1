@@ -17,4 +17,9 @@ Construir un algoritmo en pseudocódigo que simule un sistema para calcular el c
 <h4>Solución explicada paso a paso</h4>
 
 - Primer paso: Declarar las variabes que se usaran en el programa
+["Algoritmo Proyecto1M1
+    // Declaración de variables
+    Definir precioOriginal, descuento, iva, cantidad, peso, costoEnvio, costoFinal, precioDescuento, precioImpuestos, precioCantidad, costoEnviototal Como real"](url)
+
+  
 - 
