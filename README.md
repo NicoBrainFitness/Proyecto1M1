@@ -82,3 +82,6 @@ Construir un algoritmo en pseudocódigo que simule un sistema para calcular el c
  
 - Octavo Paso: Probar el pseudo codigo reailzado en Pseint, con el siguiente resultado:
 <img src = "https://github.com/NicoBrainFitness/Proyecto1M1/blob/main/Resultado%20Pseint_P1M1.png">
+
+- Paso final: se confirma que el resultado del pseudocodigo es exactamente igual al soliciado en el ejericio. Prueba Superada!
+- Gracias!
