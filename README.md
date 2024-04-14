@@ -81,4 +81,4 @@ Construir un algoritmo en pseudocódigo que simule un sistema para calcular el c
     - Escribir "Costo total de producto + envío: ", costoFinal
  
 - Octavo Paso: Probar el pseudo codigo reailzado en Pseint, con el siguiente resultado:
-<img src = "https://github.com/NicoBrainFitness/Proyecto1M1/blob/main/Resultado%20Pseint_P1M1.png"
+<img src = "https://github.com/NicoBrainFitness/Proyecto1M1/blob/main/Resultado%20Pseint_P1M1.png">
