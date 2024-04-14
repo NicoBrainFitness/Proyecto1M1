@@ -64,7 +64,7 @@ Construir un algoritmo en pseudocódigo que simule un sistema para calcular el c
     - FinSi
     
 
-- Sexto Paso: Para ejecutar correctamente la selección del lugar de destino, se debe de convertir el costo del envío del arreglo bidimensional a número:
+- Sexto Paso: Para ejecutar correctamente la selección del lugar de destino, se debe de convertir el costo del envío del arreglo bidimensional a número. Si bien es cierto, este no es un paso evaluado, el profesor nos indico que puede ayudar para el reconocimiento en PSeint, ya que no es tan sencillo de realizar:
     - cadenaCostoEnvio <- destino[1,2]
 	    - costoEnvio <- ConvertirANumero(cadenaCostoEnvio)
 	
