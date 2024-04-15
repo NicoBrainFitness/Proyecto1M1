@@ -50,7 +50,7 @@ Algoritmo Proyecto1M1
 	cadenaCostoEnvio <- destino[1,2]
 	costoEnvio <- ConvertirANumero(cadenaCostoEnvio)
 	
-	costoEnviototal = (costoEnvio) + (peso * 2 )
+	costoEnviototal = (costoEnvio + 9) + (peso * 2 )
 	
 	
     costoFinal <- precioCantidad + costoEnviototal
