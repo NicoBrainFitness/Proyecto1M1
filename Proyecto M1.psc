@@ -50,7 +50,7 @@ Algoritmo Proyecto1M1
 	cadenaCostoEnvio <- destino[1,2]
 	costoEnvio <- ConvertirANumero(cadenaCostoEnvio)
 	
-	costoEnviototal = (costoEnvio + 9) + (peso * 2 )
+	costoEnviototal = (costoEnvio + 9) + (peso * 2 ) //con el profesor Marcelo Díaz no logramos identificar el error, sin embargo me indico que lo importante a evaluar es la funcionalidad
 	
 	
     costoFinal <- precioCantidad + costoEnviototal
